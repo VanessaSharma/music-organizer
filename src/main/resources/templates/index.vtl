@@ -1,20 +1,4 @@
-<h1>Music list!</h1>
+<h1>Welcome to the Music Organizer Application</h1>
 
-#if ($albums)
-  <ul>
-    #foreach ($album in $albums)
-      <li>$album.getAlbum()</li>
-    #end
-  </ul>
-#else
-  <p>No Music Entry!</p>
-#end
-
-<p>Add a new Album:</p>
-
-<form action="/MusicOrg" method="post">
-  <label for="description">Album Description</label>
-  <input id="description" name="description" type="text">
-
-  <button type="submit" class="btn btn-default">Add album</button>
-</form>
+<a href="/MusicOrg/new">Add a new album</a>
+<a href="/MusicOrg">View all current albums</a>

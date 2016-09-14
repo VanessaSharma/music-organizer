@@ -1,0 +1,13 @@
+<h1>Album list!</h1>
+
+#if ($albums)
+  <ul>
+    #foreach ($album in $albums)
+      <li><a href="/MusicOrg/$album.getId()">$album.getAlbum()</a></li>
+    #end
+  </ul>
+#else
+  <p>No albums!</p>
+#end
+
+<a href="/MusicOrg/new">Add New Album</a>
