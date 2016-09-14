@@ -3,13 +3,13 @@ import java.util.List;
 
 public class MusicOrg {
   private String mAlbum;
-  private String mArtist;
+  // private String mArtist;
   private static List<MusicOrg> instances = new ArrayList<MusicOrg>();
   private int mId;
 
-  public MusicOrg (String album, String artist) {
+  public MusicOrg (String album) {
     mAlbum = album;
-    mArtist = artist;
+    // mArtist = artist;
     instances.add(this);
     mId = instances.size();
   }
@@ -18,9 +18,9 @@ public class MusicOrg {
     return mAlbum;
   }
 
-  public String getArtist() {
-    return mArtist;
-  }
+  // public String getArtist() {
+  //   return mArtist;
+  // }
 
   public int getId() {
     return mId;
